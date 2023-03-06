@@ -1,0 +1,10 @@
+- hosts: kafka_connect
+  tasks: 
+  - name: directory copy to remote device
+    copy:
+        src: e2ee-2.0.9-cp7.3/
+        dest: /opt/e2ee
+        owner: root
+        group: root
+        mode: 0644
+  

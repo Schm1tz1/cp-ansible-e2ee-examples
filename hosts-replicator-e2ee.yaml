@@ -1,0 +1,12 @@
+# ...
+kafka_connect:
+  hosts:
+    connect:
+
+  vars:
+    kafka_connect_service_environment_overrides:
+      CLASSPATH: "/opt/e2ee/confluent-encryption-authorizers-2.0.9-cp-7.3/*:/opt/e2ee/confluent-encryption-authorizers-2.0.9-cp-7.3/lib/*:/opt/e2ee/confluent-encryption-aws-2.0.9-cp-7.3/*:/opt/e2ee/confluent-encryption-aws-2.0.9-cp-7.3/lib/*:/opt/e2ee/confluent-encryption-azure-2.0.9-cp-7.3/*:/opt/e2ee/confluent-encryption-azure-2.0.9-cp-7.3/lib/*:/opt/e2ee/confluent-encryption-cipherconfigproviders-2.0.9-cp-7.3/*:/opt/e2ee/confluent-encryption-cipherconfigproviders-2.0.9-cp-7.3/lib/*:/opt/e2ee/confluent-encryption-common-2.0.9-cp-7.3/*:/opt/e2ee/confluent-encryption-common-2.0.9-cp-7.3/lib/*:/opt/e2ee/confluent-encryption-dynamodb-2.0.9-cp-7.3/*:/opt/e2ee/confluent-encryption-dynamodb-2.0.9-cp-7.3/lib/*:/opt/e2ee/confluent-encryption-gcp-2.0.9-cp-7.3/*:/opt/e2ee/confluent-encryption-gcp-2.0.9-cp-7.3/lib/*:/opt/e2ee/confluent-encryption-gemalto-2.0.9-cp-7.3/*:/opt/e2ee/confluent-encryption-gemalto-2.0.9-cp-7.3/lib/*:/opt/e2ee/confluent-encryption-kafka-2.0.9-cp-7.3/*:/opt/e2ee/confluent-encryption-kafka-2.0.9-cp-7.3/lib/*:/opt/e2ee/confluent-encryption-kstreams-2.0.9-cp-7.3/*:/opt/e2ee/confluent-encryption-kstreams-2.0.9-cp-7.3/lib/*:/opt/e2ee/confluent-encryption-mongodb-2.0.9-cp-7.3/*:/opt/e2ee/confluent-encryption-mongodb-2.0.9-cp-7.3/lib/*:/opt/e2ee/confluent-encryption-protegrity-2.0.9-cp-7.3/*:/opt/e2ee/confluent-encryption-protegrity-2.0.9-cp-7.3/lib/*:/opt/e2ee/confluent-encryption-serializer-2.0.9-cp-7.3/*:/opt/e2ee/confluent-encryption-serializer-2.0.9-cp-7.3/lib/*:/opt/e2ee/confluent-encryption-serializer-cp55-2.0.9-cp-7.3/*:/opt/e2ee/confluent-encryption-serializer-cp55-2.0.9-cp-7.3/lib/*:/opt/e2ee/confluent-encryption-vault-2.0.9-cp-7.3/*:/opt/e2ee/confluent-encryption-vault-2.0.9-cp-7.3/lib/*"
+
+    kafka_connect_confluent_hub_plugins:
+      - confluentinc/kafka-connect-replicator:latest
+# ...
