@@ -9,3 +9,4 @@ Works as an add-on on top of CP-Ansible installation, requires existing installa
 - Create the classpath `create_classpath.sh` anmd add it in in the overrides in you `hosts.yaml` (see create_classpath.sh)
 - Re-deploy connect (e.g. `ansible-playbook -i hosts-connect-replicator-e2ee.yml confluent.platform.all --tags kafka_connect --skip-tags package,validate_memory_usage -v`)
 - Check startup of connect cluster, remove conflicting jars if needed (e.g. reflections often has conflicts)
+- Attached is an example configuration for a encrypt/decrypt replicator

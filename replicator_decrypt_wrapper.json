@@ -1,0 +1,27 @@
+{
+  "name": "decrypt-replicator",
+  "config": {
+    "connector.class": "io.confluent.connect.replicator.ReplicatorSourceConnector",
+    "tasks.max": "1",
+    "topic.whitelist": "destination_topic",
+    "topic.rename.format": "decrypted_topic",
+    "src.kafka.bootstrap.servers": "cp-broker-0:9092",
+    "header.converter": "io.confluent.connect.replicator.util.ByteArrayConverter",
+    "value.converter": "io.confluent.encryption.replicator.decrypt.SecuredByteArrayConverter",
+    "value.converter.key": "PayloadEncryptionKey",
+    "value.converter.encryption.provider.name": "dek_cache",
+    "value.converter.dek_cache.provider.class": "CacheCipherProvider",
+    "value.converter.dek_cache.provider.expiry": "30",
+    "value.converter.dek_cache.provider.name": "dek_generator",
+    "value.converter.dek_generator.provider.class": "LocalCipherProvider",
+    "value.converter.wrapping.key": "LocalKekProvided",
+    "value.converter.wrapping.key.provider.name": "kek_cache",
+    "value.converter.kek_cache.provider.class": "CacheCipherProvider",
+    "value.converter.kek_cache.provider.expiry": "120",
+    "value.converter.kek_cache.provider.name": "kek_provider",
+    "value.converter.kek_provider.provider.class": "LocalCipherProvider",
+    "value.converter.kek_provider.provider.keys": "LocalKekProvided",
+    "value.converter.kek_provider.provider.LocalKekProvided.key.type": "SymmetricKey",
+    "value.converter.kek_provider.provider.LocalKekProvided.key": "+pKfXGW35ov0FQaJkjKcupdEKu4WUDBSFRyPwOHvVaw="
+  }
+}
