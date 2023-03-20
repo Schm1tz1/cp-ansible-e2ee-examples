@@ -1,4 +1,4 @@
-# E2EE-Libraries Depoyment with CP-Ansible
+# E2EE-Libraries Deployment with CP-Ansible
 Works as an add-on on top of CP-Ansible installation, requires existing installation on Connect node.
 
 ## Steps to install
