@@ -1,6 +1,8 @@
 # E2EE-Libraries Deployment with CP-Ansible
-This is an deployment example for the CSID E2EE-Accelerator / Libraries to be used with an existing CP-Ansible-Installation. It requires a working Connect node in the cluster.
-You should have some basic understanding on the E2EE package before going into the detailed configuration. Please also refer to to official documentation: https://animated-disco-b348e9b1.pages.github.io/ and the samples / training repos: https://github.com/confluentinc/confluent-encryption-samples and https://github.com/confluentinc/confluent-encryption-training
+This is an deployment example for the CSID E2EE-Accelerator / Libraries (`go/e2e`) to be used with an existing CP-Ansible-Installation. It requires a working Connect node in the cluster and a release package of the E2EE-Libraries.
+You should have some basic understanding on the E2EE package before going into the detailed configuration. 
+
+Please also refer to to official documentation: https://animated-disco-b348e9b1.pages.github.io/ and the samples / training repos: https://github.com/confluentinc/confluent-encryption-samples and https://github.com/confluentinc/confluent-encryption-training
 A lot of material can be found via `go/e2e`.
 
 ## Steps to install
