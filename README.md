@@ -16,6 +16,6 @@ A lot of material can be found via `go/e2e`.
 
 ## Example: Replicator Setup
 Attached is an example configuration for a 2-replicator setup (encrypt/decrypt) with locally (here: as String in prperties) provided wrapping key (KEK) and a dynamically generated AES data key (DEK) that is cached for 120 seconds.
-First replicator will replicate an encrypt data from *source_topic* to *destination_topic* and the socond one will replicate and decrypt from *destination_topic* to *decrypted_topic*.
-- If you are working with Replicator and CSID E2EE libraries, please make sure you are using the replicator-specific concerters !
+First replicator will replicate and encrypt data from *source_topic* to *destination_topic* and the socond one will replicate and decrypt from *destination_topic* to *decrypted_topic*.
+- If you are working with Replicator and CSID E2EE libraries, please make sure you are using the replicator-specific converters !
 - For more information, please refer to to official documentation: https://animated-disco-b348e9b1.pages.github.io/ and the samples / training repos: https://github.com/confluentinc/confluent-encryption-samples and https://github.com/confluentinc/confluent-encryption-training
