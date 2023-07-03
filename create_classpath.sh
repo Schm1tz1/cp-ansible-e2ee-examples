@@ -11,5 +11,7 @@ done
 
 classpath=${tmp_classpath:1}
 echo "# Add this to your hosts.yml"
-echo "kafka_connect_service_environment_overrides:"
-echo "  CLASSPATH: \"$classpath\""
+echo "kafka_connect:"
+echo "  vars:"
+echo "    kafka_connect_service_environment_overrides:"
+echo "      CLASSPATH: \"$classpath\""
