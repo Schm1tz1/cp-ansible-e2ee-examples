@@ -10,7 +10,7 @@ A lot of material can be found via `go/e2e`.
 - Unpack all the zip files into a target subdir (e.g. e2ee-2.0.9-cp7.3)
 - Adapt you configs according to that subdirectory
 - Deploy the libs to your connect host using the `deploy_e2ee.yaml` playbook (e.g. `ansible-playbook -i hosts-connect-replicator-e2ee.yml deploy_e2ee.yml`)
-- Create the classpath `create_classpath.sh` and add it in in the overrides in you `hosts.yaml` (see create_classpath.sh)
+- Create the classpath `create_classpath.sh` and add it in the overrides in your `hosts.yaml` (see create_classpath.sh)
 - Re-deploy connect (e.g. `ansible-playbook -i hosts-connect-replicator-e2ee.yml confluent.platform.all --tags kafka_connect --skip-tags package,validate_memory_usage -v`)
 - Check startup of connect cluster, remove conflicting jars if needed (e.g. reflections often has conflicts)
 
